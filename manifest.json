@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "PAD Wikia Helper",
+    "description": "A chrome extension helps you filter PAD data on http://pad.skyozora.com/",
+    "version": "1.0.1",
+    "content_scripts": [{
+        "matches": [ "http://pad.skyozora.com/team/*", "https://pad.skyozora.com/team/*" ],
+        "js": [ "jquery.min.js", "content.js" ],
+        "css": [ "content.css" ],
+        "run_at": "document_end",
+        "all_frames": true
+    }]
+}
