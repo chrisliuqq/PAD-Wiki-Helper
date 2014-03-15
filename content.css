@@ -3,3 +3,23 @@
     width: 130px;
     font-size: 2em;
 }
+
+#padhelper_stage_master button {
+	border: 1px solid #333;
+	padding: 0.5em;
+	font-size: 12px;
+	line-height: 1.2em;
+	background: #444;
+	color: #fff;
+	font-family: helvetica, sans-serif;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#444));
+	-webkit-appearance: none;
+	-webkit-box-shadow: 1px 1px 1px #222;
+	-moz-box-shadow: 1px 1px 1px #222;
+	box-shadow: 1px 1px 1px #222;
+
+	font-weight: bold;
+	margin-right: 0.2em;
+	text-shadow: #330000 0 0 2px;
+	width: auto;
+}

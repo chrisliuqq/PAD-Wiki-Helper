@@ -6,8 +6,8 @@ $("table").eq(9).after($("#dropDownBox #pet").clone().html());
 $("table").eq(10).find("td:nth-child(3) a").filter(function(index) { return ($(this).attr("href") != "pets/752"); }).closest("tr").hide()
 */
 
-var stage_level = 9;
-var result_level = 10;
+var stage_level = 3;
+var result_level = 4;
 var team_leader = 3;
 var team_mate = [4, 7];
 var team_friend = 8;
@@ -15,7 +15,7 @@ var result_table;
 
 setTimeout(function() {
 	result_table = $("table").eq(result_level);
-	$("table").eq(stage_level).after('<div id="padhelper_stage_master">隊長過濾：<select id="padhelper_stage_master_selector">' + $("#dropDownBox #pet").html() + '</select><button id="padhelper_stage_master_cancel">取消過濾</button><button id="padhelper_stage_calculate">統計</button></div>');
+	$("table").eq(stage_level).after('<div id="padhelper_stage_master" class="style1">隊長過濾：<select id="padhelper_stage_master_selector">' + $("#dropDownBox #pet").html() + '</select><button id="padhelper_stage_master_cancel">取消過濾</button><button id="padhelper_stage_calculate">統計</button></div>');
 	$("#padhelper_stage_master_cancel").click(function(){
 		result_table.find("tr").show();
 		$("#padhelper_stage_stats").html( "" );
@@ -26,10 +26,18 @@ setTimeout(function() {
 		var html = "";
 		var temp = "";
 		var sorting_temp = [];
-		result_table.find("tr:visible:not(:first-child)").each(function() {
+		result_table.find("tr:visible:not(:first-child)").each(function(index , v) {
+			
+			console.debug( index );
+			console.debug( v );
+
+			if ( index < 1 ) return true;
+
 			var row = $(this);
+
 			for ( var i = team_mate[0]; i <= team_mate[1]; i++ ) {
 				member = row.find("td:nth-child(" + i + ") a");
+				console.debug( member );
 				member_id = member.attr("href").replace("pets/", "");
 				if ( typeof(stats["members"][member_id]) == "undefined" ) {
 					stats["members"][member_id] = 0;

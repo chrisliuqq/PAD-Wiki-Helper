@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "PAD Wikia Helper",
     "description": "A chrome extension helps you filter PAD data on http://pad.skyozora.com/",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "homepage_url": "https://github.com/chrisliuqq/PAD-Wikia-Helper",
     "update_url": "https://raw.github.com/chrisliuqq/PAD-Wikia-Helper/master/updates.xml",
     "content_scripts": [{
