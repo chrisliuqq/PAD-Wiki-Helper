@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "PAD Wikia Helper",
-    "description": "A chrome extension helps you filter PAD data on http://pad.skyozora.com/",
-    "version": "1.0.3",
-    "homepage_url": "https://github.com/chrisliuqq/PAD-Wikia-Helper",
-    "update_url": "https://raw.github.com/chrisliuqq/PAD-Wikia-Helper/master/updates.xml",
+    "name": "PAD Wiki Helper",
+    "description": "A chrome extension helps you filter PAD data on http://pad.skyozora.com/ AND http://zh.pad.wikia.com/wiki/",
+    "version": "1.0.4",
+    "homepage_url": "https://github.com/chrisliuqq/PAD-Wiki-Helper",
+    "update_url": "https://raw.github.com/chrisliuqq/PAD-Wiki-Helper/master/updates.xml",
     "content_scripts": [{
-        "matches": [ "http://pad.skyozora.com/team/*", "https://pad.skyozora.com/team/*" ],
+        "matches": [ "http://pad.skyozora.com/team/*", "https://pad.skyozora.com/team/*" , "http://zh.pad.wikia.com/wiki/*", "https://zh.pad.wikia.com/wiki/"],
         "js": [ "jquery.min.js", "content.js" ],
         "css": [ "content.css" ],
         "run_at": "document_end",

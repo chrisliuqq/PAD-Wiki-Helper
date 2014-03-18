@@ -1,9 +1,9 @@
-PAD-Wikia-Helper
+PAD-Wiki-Helper
 ================
 
-A chrome extension helps you filter PAD data on http://pad.skyozora.com/
+A chrome extension helps you filter PAD data on http://pad.skyozora.com/ AND http://zh.pad.wikia.com/wiki/Puzzle_%26_Dragons_%E7%BB%B4%E5%9F%BA
 
-這是一個 chrome 的擴充應用程式，幫助您在瀏覽 Puzzle & Dragons 戰友系統及資訊網 http://pad.skyozora.com/ 時能夠有更好的體驗。
+這是一個 chrome 的擴充應用程式，幫助您在瀏覽 Puzzle & Dragons 戰友系統及資訊網 http://pad.skyozora.com/ 與 Puzzle ＆ Dragons Wiki http://zh.pad.wikia.com/wiki/Puzzle_%26_Dragons_%E7%BB%B4%E5%9F%BA 時能夠有更好的體驗。
 
 ## 安裝方法
 
