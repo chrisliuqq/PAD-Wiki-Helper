@@ -130,7 +130,7 @@ if (window.location.host == "zh.pad.wikia.com") {
    var date_regex = /(\d{4})年(\d{1,2})月(\d{1,2})日/;
 
    var date_table = $("h2:contains('開放時間記錄')").next("table");
-   if (date_table.length <= 0) return;
+   if (date_table && date_table.length <= 0) throw new Error("can't find open time history");
 
    var start_date = "", end_date = "";
    var durings = [];
